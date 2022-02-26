@@ -4,7 +4,7 @@ module.exports = {
   changefreq: "daily",
   priority: 1,
   transform: async (config, path) => {
-    const ignoredPaths = ["/500", "/404"];
+    const ignoredPaths = ["/500", "/404", "/admin/*"];
 
     if (ignoredPaths.indexOf(path) > -1) {
       return null;

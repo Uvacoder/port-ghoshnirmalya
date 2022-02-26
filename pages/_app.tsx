@@ -1,4 +1,3 @@
-import { Box } from "@chakra-ui/react";
 import siteConfig from "config/site";
 import { initGA } from "lib/google-analytics";
 import isProduction from "lib/is-production";
@@ -54,9 +53,7 @@ const PortfolioApp = ({ Component, pageProps }: AppProps) => {
         }}
       />
       <Navbar />
-      <Box minH="calc(100vh - 77px - 148px)">
-        <Component {...pageProps} />
-      </Box>
+      <Component {...pageProps} />
     </Layout>
   );
 };
