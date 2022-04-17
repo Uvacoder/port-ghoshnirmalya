@@ -80,3 +80,6 @@ public/sitemap*.xml
 
 # Contentlayer
 .contentlayer
+
+# Keystone
+.keystone
